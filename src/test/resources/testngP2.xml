@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My first Suite" verbose="1">
+
+	<test name="First Test Example  1">
+		<classes>
+			<parameter name="driverType"
+				value="webdriver.chrome.driver" />
+			<parameter name="driverPath"
+				value="C:\Users\User\QA programs\chromedriver_win32\chromedriver.exe" />
+
+			<class name="am.qa.vivarobet.test.login.VivarobetLoginTest">
+				<methods>
+					<include name="testLoginWithIncorrectCredentials" />
+					<include name="testLoginWithOnlyCorrectUsername" />
+					<include name="testLoginWithOnlyPassword" />
+				</methods>
+			</class>
+
+			<class
+				name="am.qa.vivarobet.test.register.VivarobetRegisterTest">
+				<methods>
+					<include name="testRegisterWithIncorrectEmailCharachters" />
+					<include name="testRegisterWithLongCharactersPassword" />
+					<include name="testRegisterWithOnlyEmail" />
+					<include name="testRegisterWithOnlyPassword" />
+
+					<include name="testRegisterWithShortPassword" />
+					<include name="testRegisterNameFieldNotAcceptDigits" />
+					<include name="testRegisterNameFieldNotAcceptSpace" />
+					<include name="testRegisterNameFieldNotAcceptSymbol" />
+
+					<include name="testRegisterNameFieldNotAcceptTooLongCharachters" />
+					<include name="testRegisterNameFieldNotAcceptTooShortCharachters" />
+					<include name="testRegisterLastNameFieldNotAcceptDigits" />
+					<include name="testRegisterLastNameFieldNotAcceptSpace" />
+
+					<include name="testRegisterLastNameFieldNotAcceptSymbol" />
+					<include name="testRegisterLastNameFieldNotAcceptTooLongCharachters" />
+					<include name="testRegisterLastNameFieldNotAcceptTooShortCharachters" />
+					<include name="testRegisterPassportNumberFieldNotAcceptOnlyLetters" />
+				</methods>
+			</class>
+
+
+			<class
+				name="am.qa.vivarobet.test.third.party.integration.VivarobetThirdPartyIntegrationTest">
+				<methods>
+					<include name="testFacebookNavigation" />
+				    <include name="testTwitterNavigation" />
+ 					<include name="testInstagramNavigation" />
+				</methods>
+			</class>
+
+
+
+
+
+
+		</classes>
+	</test>
+</suite>

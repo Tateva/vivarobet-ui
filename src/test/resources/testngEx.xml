@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My first Suite" verbose="1" >
+
+  <test name="First Test Example  1" >
+    <classes>
+    <parameter name="driverType" value="webdriver.chrome.driver" />
+    <parameter name="driverPath" value="C:\Users\User\QA programs\chromedriver_win32\chromedriver.exe" />
+      
+       <class name="am.qa.vivarobet.test.login.VivarobetLoginTest">
+     <methods>
+            <include name=""/>
+      </methods>
+      </class>
+                  
+           <class name="am.qa.vivarobet.test.register.VivarobetRegisterTest">
+     <methods>
+            <include name="" />			
+      </methods>
+      </class>
+          
+           <class name="am.qa.vivarobet.test.menu.VivarobetMenuNavigationTest">
+     <methods>
+         
+					<include name="testVirtualSportNavigation" />
+					<include name="testLiveNavigation" />
+					<include name="testSportNavigation" />
+					<include name="testPokerNavigation" />
+
+					<include name="testBeloteNavigation" />
+					<include name="testCasinoNavigation" />
+					<include name="testKenoNavigation" />
+					<include name="testBetfightsNavigation" />
+
+					<include name="testFarkleNavigation" />
+					<include name="testGamesNavigation" />
+					<include name="testTournamentsNavigation" />
+					<include name="testFantasySportsNavigation" />
+
+					<include name="testBetOnPoliticsNavigation" />
+					<include name="testPoolsBettingNavigation" />
+					<include name="testVivaroGoNavigation" />
+					<include name="testBlastNavigation" />
+
+					<include name="testTalismanNavigation" />
+					<include name="testLiveCasinoNavigation" />
+				
+					
+      </methods>
+      </class>
+      
+      <class name="am.qa.vivarobet.test.user.profile.VivarobetUserProfileTest">
+     <methods>
+            <include name=""/>
+      </methods>
+      </class>
+          
+          
+    </classes>
+ </test>
+</suite>
