@@ -1,3 +1,3 @@
 # vivarobet-ui
-## run tests ith the following command
-mvn clean install -testngxml=testngEx.xml
+## run tests with the following command
+mvn clean install -Dtestngxml=testngEx.xml
