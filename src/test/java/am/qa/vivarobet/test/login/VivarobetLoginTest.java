@@ -28,7 +28,7 @@ public class VivarobetLoginTest extends VivarobetBaseTest {
 		String incorrectPassword = ReadFromFileUtil.readPropertyByName("incorrectPassword");
 		loginPage.login(correctUser, incorrectPassword);
 		loginPage.closeLoginDialog();
-		Assert.assertTrue(loginPage.loginButtonDisplayed());
+		Assert.assertTrue(home.signButtonDisplayed());
 
 	}
 
@@ -88,7 +88,7 @@ public class VivarobetLoginTest extends VivarobetBaseTest {
 		Thread.sleep(5000);
 		loginPage.logOut();
 		Thread.sleep(4000);
-		Assert.assertTrue(loginPage.loginButtonDisplayed());
+		Assert.assertTrue(home.signButtonDisplayed());
 
 	}
 	
@@ -105,7 +105,7 @@ public class VivarobetLoginTest extends VivarobetBaseTest {
 		loginPage.login("aaabbb@gmail.com", "1234567");
 		Thread.sleep(5000);
 		loginPage.closeLoginDialog();
-		Assert.assertTrue(loginPage.loginButtonDisplayed());
+		Assert.assertTrue(home.signButtonDisplayed());
 
 	}
 
@@ -123,7 +123,7 @@ public class VivarobetLoginTest extends VivarobetBaseTest {
 		loginPage.login(correctUser,"");		
 		Thread.sleep(3000);
 		loginPage.closeLoginDialog();
-		Assert.assertTrue(loginPage.loginButtonDisplayed());
+		Assert.assertTrue(home.signButtonDisplayed());
 
 	}
 	
@@ -139,7 +139,7 @@ public class VivarobetLoginTest extends VivarobetBaseTest {
 		VivaroLoginPage loginPage = home.openLoginDialog();
 		loginPage.login("", "123abc");
 		loginPage.closeLoginDialog();
-		Assert.assertTrue(loginPage.loginButtonDisplayed());
+		Assert.assertTrue(home.signButtonDisplayed());
 
 	}
 

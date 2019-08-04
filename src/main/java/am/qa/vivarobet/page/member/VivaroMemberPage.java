@@ -11,21 +11,6 @@ public class VivaroMemberPage  extends VivaroHomePage {
 	public VivaroMemberPage(WebDriver driver) {
 		super(driver);
 	}
-	
-
-//	@FindBy(xpath="//button[@value='Sign in']")
-//	WebElement signbutton; 
-//	
-//    
-//	public  VivaroMemberPage sign()  {
-//		
-//		signbutton.click();
-//		return new VivaroMemberPage(driver);
-//		
-//		
-//	}
-//    
-
 
 }
 

@@ -19,7 +19,7 @@ public class VivaroRegisterPage extends PageObject {
 	WebElement passFieldReg;
 
 	@FindBy(xpath = "//button[@ng-click='goToNextStep()']")
-	WebElement nextButton;
+	WebElement activeNextButton;
 
 	@FindBy(xpath = "//input[@name='first_name']")
 	WebElement nameField;
@@ -61,10 +61,10 @@ public class VivaroRegisterPage extends PageObject {
 	
 	
 	@FindBy(xpath = "//button[contains(@ng-disabled,'registration.busy || (registration')]")
-	WebElement secondPageRegisterButton;
+	WebElement secondRegisterPageButton;
 	
-	public boolean secondPageRegisterButtonPresent() {
-		return secondPageRegisterButton.isDisplayed();
+	public boolean secondRegisterPageButtonPresent() {
+		return secondRegisterPageButton.isDisplayed();
 	}
 	
 	
@@ -88,7 +88,7 @@ public class VivaroRegisterPage extends PageObject {
 
 	public void clickToNextButton() {
 		try {
-			nextButton.click();
+			activeNextButton.click();
 		} catch (Exception ex) {
 			passiveNextButton.click();
 		}

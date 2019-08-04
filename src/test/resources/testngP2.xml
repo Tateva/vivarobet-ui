@@ -29,15 +29,20 @@
 					<include name="testRegisterNameFieldNotAcceptSpace" />
 					<include name="testRegisterNameFieldNotAcceptSymbol" />
 
-					<include name="testRegisterNameFieldNotAcceptTooLongCharachters" />
-					<include name="testRegisterNameFieldNotAcceptTooShortCharachters" />
+					<include
+						name="testRegisterNameFieldNotAcceptTooLongCharachters" />
+					<include
+						name="testRegisterNameFieldNotAcceptTooShortCharachters" />
 					<include name="testRegisterLastNameFieldNotAcceptDigits" />
 					<include name="testRegisterLastNameFieldNotAcceptSpace" />
 
 					<include name="testRegisterLastNameFieldNotAcceptSymbol" />
-					<include name="testRegisterLastNameFieldNotAcceptTooLongCharachters" />
-					<include name="testRegisterLastNameFieldNotAcceptTooShortCharachters" />
-					<include name="testRegisterPassportNumberFieldNotAcceptOnlyLetters" />
+					<include
+						name="testRegisterLastNameFieldNotAcceptTooLongCharachters" />
+					<include
+						name="testRegisterLastNameFieldNotAcceptTooShortCharachters" />
+					<include
+						name="testRegisterPassportNumberFieldNotAcceptOnlyLetters" />
 				</methods>
 			</class>
 
@@ -46,11 +51,30 @@
 				name="am.qa.vivarobet.test.third.party.integration.VivarobetThirdPartyIntegrationTest">
 				<methods>
 					<include name="testFacebookNavigation" />
-				    <include name="testTwitterNavigation" />
- 					<include name="testInstagramNavigation" />
+					<include name="testTwitterNavigation" />
+					<include name="testInstagramNavigation" />
 				</methods>
 			</class>
 
+
+
+			<class
+				name="am.qa.vivarobet.test.language.localization.VivarobetLocalizationTest">
+				<methods>
+					<include name="testAllLanguageLocalization" />
+				</methods>
+			</class>
+
+
+
+			<class name="am.qa.vivarobet.test.guest.VivarobetGuestTest">
+				<methods>
+					<include name="testFeedbackWithIncorrectEmail" />
+					<include name="testFeedbackWithEmailAndEmptyMessageBox" />
+					<include name="testFeedbackWithEmailAndMessageText" />
+					
+				</methods>
+			</class>
 
 
 

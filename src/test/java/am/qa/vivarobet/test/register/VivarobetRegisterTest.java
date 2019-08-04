@@ -23,7 +23,7 @@ public class VivarobetRegisterTest extends VivarobetBaseTest {
 		registerPage.firstPageRegister("aaabbb@aaa.com", "1234567");
 		registerPage.secondPageNamesRegister("aabb", "ayan");
 		registerPage.secondPageDatesRegister("AG121212", "123123");	
-		Assert.assertTrue(registerPage.secondPageRegisterButtonPresent());
+		Assert.assertTrue(registerPage.secondRegisterPageButtonPresent());
 
 	}
 
@@ -122,7 +122,7 @@ public class VivarobetRegisterTest extends VivarobetBaseTest {
 		VivaroRegisterPage registerPage = home.openRegisterDialog();
 		registerPage.firstPageRegister("aabb@aaa.com", "1234567");
 		registerPage.secondPageNamesRegister("123456", "");
-		Assert.assertTrue(registerPage.secondPageRegisterButtonPresent());
+		Assert.assertTrue(registerPage.secondRegisterPageButtonPresent());
 	}
 
 	
@@ -139,7 +139,7 @@ public class VivarobetRegisterTest extends VivarobetBaseTest {
 		VivaroRegisterPage registerPage = home.openRegisterDialog();
 		registerPage.firstPageRegister("aabb@aaa.com", "1234567");
 		registerPage.secondPageNamesRegister("aaa aaa", "");
-		Assert.assertTrue(registerPage.secondPageRegisterButtonPresent());
+		Assert.assertTrue(registerPage.secondRegisterPageButtonPresent());
 
 	}
 
@@ -157,7 +157,7 @@ public class VivarobetRegisterTest extends VivarobetBaseTest {
 		VivaroRegisterPage registerPage = home.openRegisterDialog();
 		registerPage.firstPageRegister("aabb@aaa.com", "1234567");
 		registerPage.secondPageNamesRegister("aaa#@", "");
-		Assert.assertTrue(registerPage.secondPageRegisterButtonPresent());
+		Assert.assertTrue(registerPage.secondRegisterPageButtonPresent());
 
 	}
 
@@ -175,7 +175,7 @@ public class VivarobetRegisterTest extends VivarobetBaseTest {
 		VivaroRegisterPage registerPage = home.openRegisterDialog();
 		registerPage.firstPageRegister("aabbb@aaa.com", "1234567");
 		registerPage.secondPageNamesRegister("aaaaabbbbbaaaaabbbbbaaaaabbbbbaaaaabbbbbaaaaabbbbba", "aaa");
-		Assert.assertTrue(registerPage.secondPageRegisterButtonPresent());
+		Assert.assertTrue(registerPage.secondRegisterPageButtonPresent());
 
 	}
 
@@ -193,7 +193,7 @@ public class VivarobetRegisterTest extends VivarobetBaseTest {
 		VivaroRegisterPage registerPage = home.openRegisterDialog();
 		registerPage.firstPageRegister("aabbb@aaa.com", "1234567");
 		registerPage.secondPageNamesRegister("a", "");
-		Assert.assertTrue(registerPage.secondPageRegisterButtonPresent());
+		Assert.assertTrue(registerPage.secondRegisterPageButtonPresent());
 
 
 	}
@@ -213,7 +213,7 @@ public class VivarobetRegisterTest extends VivarobetBaseTest {
 		registerPage.firstPageRegister("aabb@aaa.com", "1234567");
 		registerPage.secondPageNamesRegister("aaa", "123456");
 		registerPage.secondPageDatesRegister("aaa123", "123456");
-		Assert.assertTrue(registerPage.secondPageRegisterButtonPresent());
+		Assert.assertTrue(registerPage.secondRegisterPageButtonPresent());
 
 	}
 
@@ -232,7 +232,7 @@ public class VivarobetRegisterTest extends VivarobetBaseTest {
 		registerPage.firstPageRegister("aabb@aaa.com", "1234567");
 		registerPage.secondPageNamesRegister("aaa", "aaa aaa");
 		registerPage.secondPageDatesRegister("aaa123", "123456");
-		Assert.assertTrue(registerPage.secondPageRegisterButtonPresent());
+		Assert.assertTrue(registerPage.secondRegisterPageButtonPresent());
 
 	}
 
@@ -251,7 +251,7 @@ public class VivarobetRegisterTest extends VivarobetBaseTest {
 		registerPage.firstPageRegister("aabb@aaa.com", "1234567");
 		registerPage.secondPageNamesRegister("aaa", "aaa@#");
 		registerPage.secondPageDatesRegister("aaa123", "123456");
-		Assert.assertTrue(registerPage.secondPageRegisterButtonPresent());
+		Assert.assertTrue(registerPage.secondRegisterPageButtonPresent());
 
 	}
 
@@ -270,7 +270,7 @@ public class VivarobetRegisterTest extends VivarobetBaseTest {
 		registerPage.firstPageRegister("aabbb@aaa.com", "1234567");
 		registerPage.secondPageNamesRegister("aaa", "aaaaabbbbbaaaaabbbbbaaaaabbbbbaaaaabbbbbaaaaabbbbba");
 		registerPage.secondPageDatesRegister("aaa123", "123456");
-		Assert.assertTrue(registerPage.secondPageRegisterButtonPresent());
+		Assert.assertTrue(registerPage.secondRegisterPageButtonPresent());
 
 	}
 
@@ -289,7 +289,7 @@ public class VivarobetRegisterTest extends VivarobetBaseTest {
 		registerPage.firstPageRegister("aabbb@aaa.com", "1234567");
 		registerPage.secondPageNamesRegister("aaa", "a");
 		registerPage.secondPageDatesRegister("aaa123", "123456");
-		Assert.assertTrue(registerPage.secondPageRegisterButtonPresent());
+		Assert.assertTrue(registerPage.secondRegisterPageButtonPresent());
 
 	}
 
@@ -308,7 +308,7 @@ public class VivarobetRegisterTest extends VivarobetBaseTest {
 		registerPage.firstPageRegister("aabbb@aaa.com", "1234567");
 		registerPage.secondPageNamesRegister("aaa", "aaa");
 		registerPage.secondPageDatesRegister("aaaaaa", "123456");
-		Assert.assertTrue(registerPage.secondPageRegisterButtonPresent());
+		Assert.assertTrue(registerPage.secondRegisterPageButtonPresent());
 
 	}
 	

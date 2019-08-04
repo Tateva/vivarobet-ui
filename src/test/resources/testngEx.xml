@@ -21,29 +21,7 @@
            <class name="am.qa.vivarobet.test.menu.VivarobetMenuNavigationTest">
      <methods>
          
-					<include name="testVirtualSportNavigation" />
-					<include name="testLiveNavigation" />
-					<include name="testSportNavigation" />
-					<include name="testPokerNavigation" />
-
-					<include name="testBeloteNavigation" />
-					<include name="testCasinoNavigation" />
-					<include name="testKenoNavigation" />
-					<include name="testBetfightsNavigation" />
-
-					<include name="testFarkleNavigation" />
-					<include name="testGamesNavigation" />
-					<include name="testTournamentsNavigation" />
-					<include name="testFantasySportsNavigation" />
-
-					<include name="testBetOnPoliticsNavigation" />
-					<include name="testPoolsBettingNavigation" />
-					<include name="testVivaroGoNavigation" />
-					<include name="testBlastNavigation" />
-
-					<include name="testTalismanNavigation" />
-					<include name="testLiveCasinoNavigation" />
-				
+					<include name="" />
 					
       </methods>
       </class>
@@ -55,6 +33,21 @@
       </class>
           
           
+          
+           <class name="am.qa.vivarobet.test.language.localization.VivarobetLocalizationTest">
+     <methods>
+            <include name=""/>
+      </methods>
+      </class>
+      
+      
+       <class name="am.qa.vivarobet.test.guest.VivarobetGuestTest">
+     <methods>
+            <include name=""/>
+      </methods>
+      </class>
+      
+      
     </classes>
  </test>
 </suite>

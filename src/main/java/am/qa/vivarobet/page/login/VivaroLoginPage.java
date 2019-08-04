@@ -24,14 +24,13 @@ public class VivaroLoginPage extends PageObject {
 		WebElement passField;
 		
 		@FindBy(xpath="//button[@ng-click='signin()']")
-		WebElement loginButton; 
+		WebElement signButton; 
 		
 		@FindBy(xpath="//button[@value='Sign in']")
-		WebElement signButton; 
+		WebElement loginPageSignButton; 
 		
 		@FindBy(xpath="//div[@class='closed-popup-form']")
 		WebElement closeButton;
-		
 		
 		@FindBy(xpath="//div[@id='user-settings']")
 		WebElement userSettings;
@@ -53,14 +52,16 @@ public class VivaroLoginPage extends PageObject {
 		
 		
 		public void clickToSignButton() {
-			signButton.click();
+			loginPageSignButton.click();
 		}
+		
 		
 		public void closeLoginDialog() {
 			PageFactory.initElements(driver,  this);
 			closeButton.click();
 		}
 
+		
 		public VivaroMemberPage logOut() throws InterruptedException {
 			
 			userSettings.click();
@@ -71,11 +72,6 @@ public class VivaroLoginPage extends PageObject {
 			return new VivaroMemberPage(driver);
 						
 			}
-		
-		
-		public boolean loginButtonDisplayed() {
-			return loginButton.isDisplayed();
-		}
 		
 		
 		public boolean userSettingsButtonDisplayed() {
